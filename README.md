@@ -13,18 +13,24 @@ Pre-trained checkpoints and training losses from our runs are available for down
 
 You can explore the losses using `explore losses.ipynb`
 ### 2. Data Preparation
+
 We utilize the **OpenWebText** dataset. Follow these steps to prepare the environment:
 1. **Dataset Acquisition:** Run `Data_Handling.ipynb` to download and preprocess the raw data.
 2. **Reproducibility:** Run `Generate_Indices.ipynb` to ensure consistent data shuffling and splitting.
 3. **Configuration:** Generate the necessary training configurations by running `/configs/configurator_creator.ipynb`.
 ### 3. Training
+
 To initiate training on a specific GPU (e.g., GPU 0), use the following command:
 `python train.py _a_config_file_ --gpu {gpus_to_use}`
+
 For example:
 `python train.py configs/configs_tied/config_tiedw_original.py --gpu 0`
 ---
 ## 🛠 Architecture
-The attention mechanism has been modified to support nonlinear query projections: the standard linear $W_Q$ is replaced with a residual bottleneck MLP $Q(X) = (X + f_\theta(X))/2$, where $f_\theta(X) = \text{LN}(\text{GELU}(\text{RMSNorm}(X)W_1)W_2)$ with $W_1 \in \mathbb{R}^{d \times r}$, $W_2 \in \mathbb{R}^{r \times d}$, and $r = d/2$. Keys and values remain standard linear projections.
+
+The attention mechanism has been modified to support nonlinear query projections: the standard linear $W_Q$ is replaced with a residual bottleneck MLP $Q(X) = (X + f_\theta(X))/2$, where $f_\theta(X) = \text{LN}(\text{GELU}(\text{RMSNorm}(X)W_1)W_2)$ with $W_1 \in \mathbb{R}^{d \times r}$, $W_2 \in \mathbb{R}^{r \times d}$, and $r = d/2$. 
+
+Keys and values remain standard linear projections.
 ---
 ## 📝 Citation
 If you find this work useful in your research, please cite:
