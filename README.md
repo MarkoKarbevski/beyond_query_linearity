@@ -17,7 +17,9 @@ You can explore the losses using `explore losses.ipynb`
 We utilize the **OpenWebText** dataset. Follow these steps to prepare the environment:
 1. **Dataset Acquisition:** Run `Data_Handling.ipynb` to download and preprocess the raw data.
 2. **Reproducibility:** Run `Generate_Indices.ipynb` to ensure consistent data shuffling and splitting.
-3. **Configuration:** Generate the necessary training configurations by running `/configs/configurator_creator.ipynb`.
+3. **Configuration:** Plenty configurations can be found in the configs folder. Creating a new one is relatively simple following the examples.
+
+You might want to modify `Generate_Indices.ipynb` if you want to create differently sized batches or a train run that runs for longer than 600k steps.
 ### 3. Training
 
 To initiate training on a specific GPU (e.g., GPU 0), use the following command:
@@ -25,6 +27,8 @@ To initiate training on a specific GPU (e.g., GPU 0), use the following command:
 
 For example:
 `python train.py configs/configs_tied/config_tiedw_original.py --gpu 0`
+
+Note: The repo has been created for a single GPU training, but it should not be difficult to modify it for DDP training as well, following Karpathy's example.
 ---
 ## 🛠 Architecture
 
