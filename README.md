@@ -9,7 +9,7 @@ To be presented at the ICLR 2026 Workshop on Geometry-grounded Representation Le
 ## 🚀 Quick Start
 ### 1. Model Checkpoints
 Pre-trained checkpoints and training losses from our runs are available for download:
-* **[Download from Google Drive](https://drive.google.com/drive/folders/1jpo04DxXl-VZ3llkxWox78hS8ML-1FOy?usp=sharing)**
+* **[Download from Google Drive](https://drive.google.com/drive/folders/1JNlDCGk1Rw-kfsgmDBtLOkjl9iyGXCtt?usp=drive_link)**
 
 You can explore the losses using `explore losses.ipynb`
 ### 2. Data Preparation
