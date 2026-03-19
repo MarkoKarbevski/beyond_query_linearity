@@ -1,7 +1,9 @@
 # Beyond Linearity in Attention Projections
 ### The Case for Nonlinear Queries
-Official implementation and model weights for the paper: **"Beyond Linearity in Attention Projections: The Case for Nonlinear Queries"** ([arXiv:2603.13381](https://arxiv.org/abs/2603.13381), to be presented at the ICLR 2026 Workshop on Geometry-grounded Representation Learning and Generative Modeling (GRaM)).
+Official implementation and model weights for the paper: **"Beyond Linearity in Attention Projections: The Case for Nonlinear Queries"** ([arXiv:2603.13381](https://arxiv.org/abs/2603.13381).
 This repository implements nonlinear query projections of the form $Q(X) = (X + f_\theta(X))/2$, where $f_\theta$ is a bottleneck MLP, replacing the standard linear $W_Q$ at the same parameter budget. Building on the algebraic redundancy of $W_Q$ established by [Karbevski and Mijoski (2025)](https://arxiv.org/abs/2510.23912), we show that nonlinear queries consistently improve validation loss over baseline, comfortably outperforming a model with 12.5% more non-embedding parameters.
+
+To be presented at the ICLR 2026 Workshop on Geometry-grounded Representation Learning and Generative Modeling (GRaM)).
 ---
 ## 🚀 Quick Start
 ### 1. Model Checkpoints
