@@ -41,4 +41,4 @@ If you find this work useful in your research, please cite:
 ## 🙏 Acknowledgments
 I am grateful to the anonymous reviewers for their constructive feedback, and to Nils Graef, Yiping Ji, Haris Mandal, and Antonij Mijoski for valuable discussions. This codebase builds on the [nanoGPT](https://github.com/karpathy/nanoGPT) repository by Andrej Karpathy.
 ---
-The code has been tested on Python version `3.12.11` using Nvidia 5090.
+The code has been tested on Python version `3.12.11` using a single Nvidia 5090 RTX GPU.
