@@ -14,7 +14,7 @@ Pre-trained checkpoints and training losses from our runs are available for down
 You can explore the losses using `explore losses.ipynb`
 ### 2. Data Preparation
 
-We utilize the **OpenWebText** dataset. Follow these steps to prepare the environment:
+We utilize the **OpenWebText** dataset. Follow these steps after preparing the `uv` environment:
 1. **Dataset Acquisition:** Run `Data_Handling.ipynb` to download and preprocess the raw data.
 2. **Reproducibility:** Run `Generate_Indices.ipynb` to ensure consistent data shuffling and splitting.
 3. **Configuration:** Plenty configurations can be found in the configs folder. Creating a new one is relatively simple following the examples.
