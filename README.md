@@ -50,5 +50,21 @@ If you find this work useful in your research, please cite:
 ---
 ## 🙏 Acknowledgments
 I am grateful to the anonymous reviewers for their constructive feedback, and to Nils Graef, Yiping Ji, Haris Mandal, and Antonij Mijoski for valuable discussions. This codebase builds on the [nanoGPT](https://github.com/karpathy/nanoGPT) repository by Andrej Karpathy.
+
+---
+## 🤝 Collaboration & Contributing (Open-Source & Commercial)
+
+This repository represents an independent research initiative focused on establishing the mathematical foundations and structural validity of Nonlinear Residual Queries (NRQ). 
+
+To isolate the core architectural mechanics cleanly, development has been focused entirely on delivering a verified implementation, rather than an industrialized production framework. As a solo researcher, I highly welcome both open-source and commercial collaborations to improve the work.
+
+I am very interested in collaboration focused on a multitude of axes, including, but not limited to:
+
+* **Validation at Scale:** Evaluating the structural stability, performance deltas, and scaling curves of the NRQ block at the larger scales.
+* **Cross-Domain Evaluation:** Extending and testing the non-linear query architecture across diverse modalities beyond standard autoregressive language modeling, including vision, audio, and multimodal generative tasks.
+* **Optimization:** Engineering high-performance distributed training integration, hardware-specific acceleration, and custom CUDA kernels to optimize throughput.
+* **Generalization & Theoretical Developpment:** Generalizing the work to multiple projections, including the K, V and O, as well as further developping a theory in order to explain the beyond-scaling-laws performance.
+
+To discuss this further, please contact me via any of the emails outlined in the paper, or via linkedin.
 ---
 The code has been tested on Python version `3.12.11` using a single Nvidia 5090 RTX GPU.
